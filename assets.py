@@ -6,10 +6,10 @@ from dotenv import load_dotenv
 import os
 import re
 
-load_dotenv()
+load_dotenv() #add external request for user access
 
 slug_collection = 'boredape-baseclub'
-initial_token = 'LXBrPTE4ODI3MTg3NTQ='
+initial_token = 'LXBrPTE4ODI3MTg3NTQ=' #first pagination 
 
 url = f'https://api.opensea.io/api/v2/collection/{slug_collection}/nfts?limit=200'
 api_key = os.getenv('api_key')
@@ -21,8 +21,8 @@ headers = {
 }
 
 
-
-def main_request(url, pagination_token, headers): #Função responsável por realizar o request na API em formato JSON
+# main_request = Function responsible for got all paginations avaliable 
+def main_request(url, pagination_token, headers): 
     try:
         response = requests.get(url + f'&next={pagination_token}', headers=headers)
         response.raise_for_status()
@@ -57,7 +57,7 @@ def fetch_all_paginations(initial_token, url, headers, max_requests=100, delay=1
 
     return pagination_tokens
 
-##Função armazenando todas as páginas
+
 all_tokens = fetch_all_paginations(
     initial_token = initial_token,
     url = url,
@@ -66,6 +66,7 @@ all_tokens = fetch_all_paginations(
     delay=10
 )
 
+#fetch_nfts = Function responsible for create request for each pagination avaliable at fetch_all_paginations function
 def fetch_nfts(all_tokens, url, headers, max_requests=100, delay=10):
     all_nfts=[]
     request_count = 0
@@ -98,6 +99,7 @@ nfts_data = fetch_nfts(
     delay=10
 )
 
+#sanitize_filename: Funcion used for use de slug_collection as file name replacing all special character
 def sanitize_filename(name):
     return re.sub(r'[\\/:*?"<>|]', '', name)
 
