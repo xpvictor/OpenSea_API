@@ -1,0 +1,9 @@
+{
+  "version": "4.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../OpenSea-project.SemanticModel"
+    },
+    "byConnection": null
+  }
+}

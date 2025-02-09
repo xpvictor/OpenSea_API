@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "OpenSea-project"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ac82d017-d8c3-4921-97c5-cb62332c7035"
+  }
+}

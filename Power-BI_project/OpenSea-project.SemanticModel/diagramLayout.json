@@ -1,0 +1,61 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 149.60000610351563
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 238,
+            "y": 0
+          },
+          "nodeIndex": "boredape_baseclue_overview_datasourcePBI",
+          "nodeLineageTag": "37c6a485-8316-4bb9-a661-473fc0931055",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 238,
+            "y": 353
+          },
+          "nodeIndex": "dimCollection",
+          "nodeLineageTag": "5830c1d3-ddaa-4b16-80b2-537938760203",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 284,
+            "y": 176.5
+          },
+          "nodeIndex": "all_assets_order_boredape-baseclub",
+          "nodeLineageTag": "3005b484-fa3c-4dd1-b645-cbed1a3d1960",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

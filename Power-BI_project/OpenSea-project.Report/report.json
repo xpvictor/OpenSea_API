@@ -1,0 +1,68 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.61\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "publicCustomVisuals": [
+    "simpleImageEBC4593F96F1425FB3D84C5BF02B5075"
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "Open_sea_ovierview21881500957064381.svg",
+            "path": "Open_sea_ovierview21881500957064381.svg",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Open sea ovierview.svg'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Open_sea_ovierview21881500957064381.svg\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}",
+      "displayName": "Page 1",
+      "displayOption": 2,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "4cdade170ea3661d31c1",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"10df31b9a807ddb16625\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20,\"y\":222.94117647058823,\"z\":0,\"width\":178.23529411764707,\"height\":178.82352941176472,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"simpleImageEBC4593F96F1425FB3D84C5BF02B5075\",\"projections\":{\"imageURL\":[{\"queryRef\":\"boredape_baseclue_overview_datasourcePBI.image_url\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"boredape_baseclue_overview_datasourcePBI\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"image_url\"},\"Name\":\"boredape_baseclue_overview_datasourcePBI.image_url\",\"NativeReferenceName\":\"image_url\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 178.82,
+          "width": 178.24,
+          "x": 20.00,
+          "y": 222.94,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"c230d2d75db55677512a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":218.45018142685865,\"y\":115.12914967091199,\"z\":1000,\"width\":278.96678574105596,\"height\":82.65682540475733,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"boredape_baseclue_overview_datasourcePBI.name\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"boredape_baseclue_overview_datasourcePBI\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"name\"},\"Name\":\"boredape_baseclue_overview_datasourcePBI.name\",\"NativeReferenceName\":\"name\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"boredape_baseclue_overview_datasourcePBI\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"name\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'BABC #1001'\"}}]]}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 82.66,
+          "width": 278.97,
+          "x": 218.45,
+          "y": 115.13,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

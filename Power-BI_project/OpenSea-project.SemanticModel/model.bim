@@ -1,0 +1,2099 @@
+{
+  "compatibilityLevel": 1550,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"boredape_baseclue_overview_datasourcePBI\",\"dimCollection\",\"all_assets_order_boredape-baseclub\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.139.2054.0 (24.12)+334ca1c95b576cc53924655643b0d36f21caac55"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "05f62d10-9886-465e-854f-f9f0a8dac422",
+        "fromColumn": "updated_at",
+        "fromTable": "boredape_baseclue_overview_datasourcePBI",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_2e175fe8-3da1-4b1f-bfd9-de9a75b846f7"
+      },
+      {
+        "name": "3b265553-7665-4d86-8cc5-ba6e532f13ba",
+        "fromColumn": "created_date",
+        "fromTable": "dimCollection",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_fc58e46b-bfc8-4cb1-9922-2a38cb67e262"
+      },
+      {
+        "name": "21db496f-4ebf-4afc-b7d8-2e5ca7fcd01d",
+        "fromColumn": "rarity.calculated_at",
+        "fromTable": "dimCollection",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_94524571-83f0-4c35-b1ed-84df6795cffe"
+      },
+      {
+        "name": "AutoDetected_409bd667-34e2-4928-8ecc-75376352462c",
+        "fromColumn": "collection",
+        "fromTable": "boredape_baseclue_overview_datasourcePBI",
+        "toColumn": "collection",
+        "toTable": "dimCollection"
+      },
+      {
+        "name": "AutoDetected_8004d052-eece-4c8c-b30b-f6344cba1a28",
+        "fromColumn": "nft.collection",
+        "fromTable": "all_assets_order_boredape-baseclub",
+        "toColumn": "collection",
+        "toTable": "dimCollection"
+      }
+    ],
+    "sourceQueryCulture": "pt-BR",
+    "tables": [
+      {
+        "name": "boredape_baseclue_overview_datasourcePBI",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "identifier",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c0cb1826-875d-4e89-9ef4-e6599f69315e",
+            "sourceColumn": "identifier",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "collection",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6004b013-3401-497e-a2cf-29f8f35410d6",
+            "sourceColumn": "collection",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "contract",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "05ccae76-a61d-4373-963a-95481fcf7df6",
+            "sourceColumn": "contract",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "token_standard",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cd3f108b-7248-4f56-b946-eb94c83c6e88",
+            "sourceColumn": "token_standard",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ce21244b-e7e3-4eaf-8e33-a747fea420ba",
+            "sourceColumn": "name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "description",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a008f30b-0501-4f93-a83b-2c387bc8e7f4",
+            "sourceColumn": "description",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "image_url",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataCategory": "ImageUrl",
+            "dataType": "string",
+            "lineageTag": "cbd2c2e8-747d-4603-848e-db07542e8b5f",
+            "sourceColumn": "image_url",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "display_image_url",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "384cf5da-8729-4342-be57-cc6135ffa8fd",
+            "sourceColumn": "display_image_url",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "display_animation_url",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "980b57d6-8b31-44e1-a4cc-f201c435da40",
+            "sourceColumn": "display_animation_url",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "metadata_url",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e9ae9a33-ad2f-4ea4-bb3e-203d781b795c",
+            "sourceColumn": "metadata_url",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "opensea_url",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "743312d0-3f11-4741-b117-c32d9c50b9c7",
+            "sourceColumn": "opensea_url",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "updated_at",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "69a2e602-3f8f-4144-a58b-d7548a755cc6",
+            "sourceColumn": "updated_at",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_2e175fe8-3da1-4b1f-bfd9-de9a75b846f7"
+                },
+                "isDefault": true,
+                "relationship": "05f62d10-9886-465e-854f-f9f0a8dac422"
+              }
+            ]
+          },
+          {
+            "name": "is_disabled",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "lineageTag": "a24364fa-7ae5-4051-be7b-097351bf5c27",
+            "sourceColumn": "is_disabled",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "is_nsfw",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "lineageTag": "2a6e63fb-bfad-4463-a472-9acbd26f1e58",
+            "sourceColumn": "is_nsfw",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "37c6a485-8316-4bb9-a661-473fc0931055",
+        "partitions": [
+          {
+            "name": "boredape_baseclue_overview_datasourcePBI",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"C:\\Users\\victo\\OneDrive\\Documentos\\GitHub\\OpenSea_API\\datasource\\boredape_baseclue_overview_datasourcePBI.csv\"),[Delimiter=\",\", Columns=14, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"identifier\", Int64.Type}, {\"collection\", type text}, {\"contract\", type text}, {\"token_standard\", type text}, {\"name\", type text}, {\"description\", type text}, {\"image_url\", type text}, {\"display_image_url\", type text}, {\"display_animation_url\", type text}, {\"metadata_url\", type text}, {\"opensea_url\", type text}, {\"updated_at\", type datetime}, {\"is_disabled\", type logical}, {\"is_nsfw\", type logical}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_c11f4cd8-83af-4fa4-893d-0d9d27958bf4",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "d0faf5c0-ab33-4c7b-ba5c-a1c30786dc3c",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "3ca1ef17-098a-440b-947a-009267522724",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "e5e43884-1eaa-4912-98cf-579227f025ce",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "a6d5a387-5027-45ef-89e4-bc9685ede252",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "4716a2f4-ce28-491e-a0db-c56f9958fe17",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "087a1ab5-5c0d-4cd5-ae4b-f7a81d786849",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "ec0235fa-6a1e-4118-affc-2187c81cd4a9",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "d0041bba-03f9-4140-a807-273c2386cb35",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "fd7c6814-2457-4d3e-a12f-580d3e10888c",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "c509a7a8-7149-4cec-9814-a340255ce672",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "1c7558f1-671d-434b-8597-791195661530",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "80195196-c91e-4378-b1fe-17ec21cae4ff"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "084c01dc-8b7e-4fac-a46a-779fbe7e9045",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_c11f4cd8-83af-4fa4-893d-0d9d27958bf4",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_2e175fe8-3da1-4b1f-bfd9-de9a75b846f7",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "e1e73e9f-27bc-43ff-a7bb-62710a9a48c0",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "d9f38370-6c4a-4802-84a1-b80e2fec113e",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "97af088b-c492-46f4-aa82-8817770edba2",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "e98a27bd-b49c-4c9a-9fd0-abe77714a0b1",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "b9520401-46b6-4992-b276-240e5e90797d",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "13ad7218-6d8e-4ed3-a527-be14143323c8",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "2a72d255-45dd-4608-ac00-eb2abde7727f",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "f9374468-cd36-435e-ba4c-fe7d72c203e5",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "905beefc-e48e-4bf9-a3cc-f06b22a3e0d5",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "0a784a81-9afc-4d55-a3b1-c7709f5c0d0c",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "a18195ea-cc32-4422-9b68-4cba6940c3d2",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "51648b6c-d828-419e-b074-f260891089f3"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "782b65ef-ff7f-4b3f-998b-caedaa2bfbb4",
+        "partitions": [
+          {
+            "name": "LocalDateTable_2e175fe8-3da1-4b1f-bfd9-de9a75b846f7",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('boredape_baseclue_overview_datasourcePBI'[updated_at])), 1, 1), Date(Year(MAX('boredape_baseclue_overview_datasourcePBI'[updated_at])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "dimCollection",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "collection",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7768c1d4-6b69-449f-ac6c-1971a6ec0f2d",
+            "sourceColumn": "collection",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "da485d01-4560-4d30-85b6-a2a74d6cb73f",
+            "sourceColumn": "name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "description",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4dadbdc4-ce2c-4658-bf28-4c99b9672758",
+            "sourceColumn": "description",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "image_url",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "13a40f78-e72f-4297-9f9b-1c05ba7c09ab",
+            "sourceColumn": "image_url",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "banner_image_url",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "99d869d6-2275-4d51-8504-957aa8cb030d",
+            "sourceColumn": "banner_image_url",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "owner",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "16c0ffc5-52cb-445d-8eb9-15f65d0dbb1c",
+            "sourceColumn": "owner",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "safelist_status",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fa161b05-b0b5-4ae4-a62c-49df6d74fa32",
+            "sourceColumn": "safelist_status",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "category",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f3ca2d86-0e46-446c-b0b9-4fdc4da361c7",
+            "sourceColumn": "category",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "is_disabled",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "lineageTag": "0c5acb8b-19e4-477d-890d-c0b93373cd5d",
+            "sourceColumn": "is_disabled",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "is_nsfw",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "lineageTag": "78f95488-fd53-4211-acde-27c22b52c1e9",
+            "sourceColumn": "is_nsfw",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "trait_offers_enabled",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "lineageTag": "b7b1f3b2-8f0b-4a25-bfa8-726e83736b4e",
+            "sourceColumn": "trait_offers_enabled",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "collection_offers_enabled",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "lineageTag": "6a7f4a06-eb65-40a5-a904-6c2b2d4e79f4",
+            "sourceColumn": "collection_offers_enabled",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "opensea_url",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "477073c8-057b-4070-982e-79efa24bf1d2",
+            "sourceColumn": "opensea_url",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "project_url",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "411a95bf-358b-4b54-81ad-1c0256337e15",
+            "sourceColumn": "project_url",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "wiki_url",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "013131bb-c924-4134-a2e7-bb48719c1806",
+            "sourceColumn": "wiki_url",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "discord_url",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bddc1826-fa94-43b6-8582-0ae1ab6670e0",
+            "sourceColumn": "discord_url",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "telegram_url",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2f8d7a4e-3819-4ce3-9d96-5194f2d17ead",
+            "sourceColumn": "telegram_url",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "twitter_username",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6a63fe25-19ed-4001-a040-896d074a9194",
+            "sourceColumn": "twitter_username",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "instagram_username",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5ad6f0d3-71af-44ae-8168-d523a135dca4",
+            "sourceColumn": "instagram_username",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "contracts",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1c9e4d39-3d5c-4aad-bd32-8300c669ba75",
+            "sourceColumn": "contracts",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "editors",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ead98417-73a3-43e1-9520-8ae20586d7c1",
+            "sourceColumn": "editors",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "fees",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d682bdd3-0f32-42d5-ab16-c67b393c485c",
+            "sourceColumn": "fees",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "required_zone",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0c581aa9-1769-442a-ab26-f565379edeed",
+            "sourceColumn": "required_zone",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "total_supply",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4f0a22e1-2187-4087-9954-c8fdd5f0ffd9",
+            "sourceColumn": "total_supply",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "created_date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "ec0fcec3-eec2-47ca-84fa-8fffaa812831",
+            "sourceColumn": "created_date",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_fc58e46b-bfc8-4cb1-9922-2a38cb67e262"
+                },
+                "isDefault": true,
+                "relationship": "3b265553-7665-4d86-8cc5-ba6e532f13ba"
+              }
+            ]
+          },
+          {
+            "name": "rarity.strategy_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "dd904c1e-a8ac-47e8-80ad-a64bce9e1dd3",
+            "sourceColumn": "rarity.strategy_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "rarity.strategy_version",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "306ca25a-dcdd-4b7b-bd87-191a28668947",
+            "sourceColumn": "rarity.strategy_version",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "rarity.calculated_at",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "71a0d4c8-586b-46df-aad7-47fbb362b83b",
+            "sourceColumn": "rarity.calculated_at",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_94524571-83f0-4c35-b1ed-84df6795cffe"
+                },
+                "isDefault": true,
+                "relationship": "21db496f-4ebf-4afc-b7d8-2e5ca7fcd01d"
+              }
+            ]
+          },
+          {
+            "name": "rarity.max_rank",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a64a675f-4358-48d8-92a4-c9d2b0ee1d7b",
+            "sourceColumn": "rarity.max_rank",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "rarity.tokens_scored",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "68441570-0734-4d94-bc91-7dc974db60f4",
+            "sourceColumn": "rarity.tokens_scored",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "5830c1d3-ddaa-4b16-80b2-537938760203",
+        "partitions": [
+          {
+            "name": "dimCollection",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"C:\\Users\\victo\\OneDrive\\Documentos\\GitHub\\OpenSea_API\\datasource\\overview-collection_boredape-baseclub.csv\"),[Delimiter=\",\", Columns=30, Encoding=65001, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"collection\", type text}, {\"name\", type text}, {\"description\", type text}, {\"image_url\", type text}, {\"banner_image_url\", type text}, {\"owner\", type text}, {\"safelist_status\", type text}, {\"category\", type text}, {\"is_disabled\", type logical}, {\"is_nsfw\", type logical}, {\"trait_offers_enabled\", type logical}, {\"collection_offers_enabled\", type logical}, {\"opensea_url\", type text}, {\"project_url\", type text}, {\"wiki_url\", type text}, {\"discord_url\", type text}, {\"telegram_url\", type text}, {\"twitter_username\", type text}, {\"instagram_username\", type text}, {\"contracts\", type text}, {\"editors\", type text}, {\"fees\", type text}, {\"required_zone\", type text}, {\"total_supply\", Int64.Type}, {\"created_date\", type date}, {\"rarity.strategy_id\", type text}, {\"rarity.strategy_version\", Int64.Type}, {\"rarity.calculated_at\", type datetime}, {\"rarity.max_rank\", Int64.Type}, {\"rarity.tokens_scored\", Int64.Type}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_fc58e46b-bfc8-4cb1-9922-2a38cb67e262",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "8ef98abd-1809-4fe5-ad43-b084acdfe3e0",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "63e63f0f-2b7a-43d8-85d1-58e735ee3e8b",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "151248ee-682e-44b0-80c8-dfe2573aa5ff",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "4c4d3694-3e03-4b4a-aebb-77dfa28b4586",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "0da118e8-79c8-448d-a020-f34ab4e770c8",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "de2d2b57-bfe7-446c-ac2d-c50f7a534d9a",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "0bc9bfdb-d274-41a8-8a5d-55d0b1774be9",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "b2c62c15-780b-40aa-9789-90766296a47b",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "da492b5a-4006-40b0-b6f7-463d891a4f7e",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "e7088575-aa9d-4b22-a761-9b460d4c5ea3",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "b593e51e-3678-4fab-9a20-8cdd6e182728",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "ee004846-67d7-4653-812f-0862b8b7832d"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "3d91e3f8-4d68-4bb1-a35e-bef19d75f271",
+        "partitions": [
+          {
+            "name": "LocalDateTable_fc58e46b-bfc8-4cb1-9922-2a38cb67e262",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('dimCollection'[created_date])), 1, 1), Date(Year(MAX('dimCollection'[created_date])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "LocalDateTable_94524571-83f0-4c35-b1ed-84df6795cffe",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "731c55c5-8ff5-43d7-8efd-b5e0b5ac5f8b",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "250cec63-f013-40d0-9764-e664184d78e1",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "8ecacb61-94ec-4c1a-a454-d8f8acbb47b3",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "7bb72989-3b87-4995-8bd3-25ec389a1bbc",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "e3e6878a-d225-4a46-b08a-4c7de4adc7b3",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "85a41911-67d9-4af3-a85b-6117587e6eaa",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "50255268-fe84-4051-95f8-4d2989f01b00",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "0ffb37c0-f964-4a0f-a885-30b99ac976fe",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "5ca40df1-7b6a-4aec-80d0-56e4c1fef305",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "9482af8f-0e11-4849-b2c5-a5596ed977a0",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "70e203b4-02f7-473b-84bb-8a54cd76d4bc",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "93bb7db1-a974-4124-95b2-914536aaeb73"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "2cf2d0b6-6c0f-4b4d-bcfa-aa2b964c4717",
+        "partitions": [
+          {
+            "name": "LocalDateTable_94524571-83f0-4c35-b1ed-84df6795cffe",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('dimCollection'[rarity.calculated_at])), 1, 1), Date(Year(MAX('dimCollection'[rarity.calculated_at])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "all_assets_order_boredape-baseclub",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "event_type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6ad97a8e-3391-4b0b-b763-a13e92d901a7",
+            "sourceColumn": "event_type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "order_hash",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f43f3026-4999-4719-9902-1a4774224109",
+            "sourceColumn": "order_hash",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "order_type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "99192452-8cb0-4e05-aaca-04d5dc80df1f",
+            "sourceColumn": "order_type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "chain",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9f6bbcb7-ad1a-464f-995e-9133f3a8b592",
+            "sourceColumn": "chain",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "protocol_address",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "67298bf8-a4b3-42a0-9717-e7e2cc335202",
+            "sourceColumn": "protocol_address",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "start_date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6d476796-3d87-4786-9c11-fddb45b9af9b",
+            "sourceColumn": "start_date",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "expiration_date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8f5e5d14-37a7-4ab0-992c-5e652a36dcc8",
+            "sourceColumn": "expiration_date",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "asset",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6c0458b2-7922-4992-80ff-8bb65ea22bec",
+            "sourceColumn": "asset",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "quantity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "cafaa305-fe2e-4014-a28d-6912a8e0d45c",
+            "sourceColumn": "quantity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "maker",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "72d757d7-41df-4e5b-b0fd-c907b89a9b33",
+            "sourceColumn": "maker",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "taker",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fbd4f609-6831-411f-b46a-2c82ab4235eb",
+            "sourceColumn": "taker",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "payment.quantity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "622dcf10-b96a-400d-9177-183cdc6e92a3",
+            "sourceColumn": "payment.quantity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "payment.token_address",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "85961182-301d-4f0e-8cad-b1c822495c31",
+            "sourceColumn": "payment.token_address",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "payment.decimals",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "33f78b5e-5f3e-4779-8bff-a1a6aa98a1bc",
+            "sourceColumn": "payment.decimals",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "payment.symbol",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5015deaa-accb-402c-bf4e-a5cd46ff3eb8",
+            "sourceColumn": "payment.symbol",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "criteria.collection.slug",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3f22e911-ad5a-4845-bb21-93fb3fd97b88",
+            "sourceColumn": "criteria.collection.slug",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "criteria.contract.address",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ed476a2f-3786-4fc2-a73e-b19eaab7249a",
+            "sourceColumn": "criteria.contract.address",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "criteria.trait",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "05fa9c86-1db1-4a84-b7e7-ae5a42b4d1eb",
+            "sourceColumn": "criteria.trait",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "criteria.encoded_token_ids",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8e28ae7e-e012-46bc-b159-8defe2b36bb5",
+            "sourceColumn": "criteria.encoded_token_ids",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "event_timestamp",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "85db2802-c622-4aed-bf09-669852bc28e7",
+            "sourceColumn": "event_timestamp",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "is_private_listing",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "lineageTag": "ffbcc4eb-b993-4a32-be5a-645ee95cf939",
+            "sourceColumn": "is_private_listing",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "nft.identifier",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bc7b628b-38b8-47f0-a66a-66141364af03",
+            "sourceColumn": "nft.identifier",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "nft.collection",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6240988b-7895-4336-88d1-e0f5ee4c48c3",
+            "sourceColumn": "nft.collection",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "nft.contract",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "11eea0f4-60bc-4bc4-8796-008025c6b735",
+            "sourceColumn": "nft.contract",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "nft.token_standard",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5a90515d-a57c-47a6-890c-2659b3e5add9",
+            "sourceColumn": "nft.token_standard",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "nft.name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0f0daace-daee-4777-bffe-25882ffdecd1",
+            "sourceColumn": "nft.name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "nft.description",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8453bc6e-1d5c-4622-8990-c9f40fd9dec1",
+            "sourceColumn": "nft.description",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "nft.image_url",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d624f413-d988-4768-b6de-0c2c1a227d83",
+            "sourceColumn": "nft.image_url",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "nft.display_image_url",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4c500298-2f76-4e51-b82a-9c506b5653dd",
+            "sourceColumn": "nft.display_image_url",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "nft.display_animation_url",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8d6cc60c-88af-4e81-885b-a6d41c3be77a",
+            "sourceColumn": "nft.display_animation_url",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "nft.metadata_url",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "873dfdc5-b441-4d89-8e18-a9b1bd3aa7fe",
+            "sourceColumn": "nft.metadata_url",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "nft.opensea_url",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2f1c6b22-357f-48cf-b8fb-dc0572fcda08",
+            "sourceColumn": "nft.opensea_url",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "nft.updated_at",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e3e4ec37-7ef3-4b7a-97c5-6ea73c86b6f1",
+            "sourceColumn": "nft.updated_at",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "nft.is_disabled",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "29193af0-4eeb-4b7d-bd11-d4defe3d6143",
+            "sourceColumn": "nft.is_disabled",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "nft.is_nsfw",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "483a65e2-7b3e-419d-861b-fb448521a0c1",
+            "sourceColumn": "nft.is_nsfw",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "3005b484-fa3c-4dd1-b645-cbed1a3d1960",
+        "partitions": [
+          {
+            "name": "all_assets_order_boredape-baseclub",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Json.Document(File.Contents(\"C:\\Users\\victo\\OneDrive\\Documentos\\GitHub\\OpenSea_API\\datasource\\all_assets_order_boredape-baseclub.json\")),",
+                "    #\"Converted to Table\" = Table.FromList(Source, Splitter.SplitByNothing(), null, null, ExtraValues.Error),",
+                "    #\"Expanded Column1\" = Table.ExpandRecordColumn(#\"Converted to Table\", \"Column1\", {\"event_type\", \"order_hash\", \"order_type\", \"chain\", \"protocol_address\", \"start_date\", \"expiration_date\", \"asset\", \"quantity\", \"maker\", \"taker\", \"payment\", \"criteria\", \"event_timestamp\", \"is_private_listing\", \"nft\"}, {\"event_type\", \"order_hash\", \"order_type\", \"chain\", \"protocol_address\", \"start_date\", \"expiration_date\", \"asset\", \"quantity\", \"maker\", \"taker\", \"payment\", \"criteria\", \"event_timestamp\", \"is_private_listing\", \"nft\"}),",
+                "    #\"Expanded payment\" = Table.ExpandRecordColumn(#\"Expanded Column1\", \"payment\", {\"quantity\", \"token_address\", \"decimals\", \"symbol\"}, {\"payment.quantity\", \"payment.token_address\", \"payment.decimals\", \"payment.symbol\"}),",
+                "    #\"Expanded criteria\" = Table.ExpandRecordColumn(#\"Expanded payment\", \"criteria\", {\"collection\", \"contract\", \"trait\", \"encoded_token_ids\"}, {\"criteria.collection\", \"criteria.contract\", \"criteria.trait\", \"criteria.encoded_token_ids\"}),",
+                "    #\"Expanded criteria.collection\" = Table.ExpandRecordColumn(#\"Expanded criteria\", \"criteria.collection\", {\"slug\"}, {\"criteria.collection.slug\"}),",
+                "    #\"Expanded criteria.contract\" = Table.ExpandRecordColumn(#\"Expanded criteria.collection\", \"criteria.contract\", {\"address\"}, {\"criteria.contract.address\"}),",
+                "    #\"Expanded nft\" = Table.ExpandRecordColumn(#\"Expanded criteria.contract\", \"nft\", {\"identifier\", \"collection\", \"contract\", \"token_standard\", \"name\", \"description\", \"image_url\", \"display_image_url\", \"display_animation_url\", \"metadata_url\", \"opensea_url\", \"updated_at\", \"is_disabled\", \"is_nsfw\"}, {\"nft.identifier\", \"nft.collection\", \"nft.contract\", \"nft.token_standard\", \"nft.name\", \"nft.description\", \"nft.image_url\", \"nft.display_image_url\", \"nft.display_animation_url\", \"nft.metadata_url\", \"nft.opensea_url\", \"nft.updated_at\", \"nft.is_disabled\", \"nft.is_nsfw\"}),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Expanded nft\",{{\"event_type\", type text}, {\"order_hash\", type text}, {\"order_type\", type text}, {\"chain\", type text}, {\"protocol_address\", type text}, {\"start_date\", Int64.Type}, {\"expiration_date\", Int64.Type}, {\"asset\", type any}, {\"quantity\", Int64.Type}, {\"maker\", type text}, {\"taker\", type any}, {\"payment.quantity\", Int64.Type}, {\"payment.token_address\", type text}, {\"payment.decimals\", Int64.Type}, {\"payment.symbol\", type text}, {\"criteria.collection.slug\", type text}, {\"criteria.contract.address\", type text}, {\"criteria.trait\", type any}, {\"criteria.encoded_token_ids\", type any}, {\"event_timestamp\", Int64.Type}, {\"is_private_listing\", type logical}, {\"nft.identifier\", type any}, {\"nft.collection\", type any}, {\"nft.contract\", type any}, {\"nft.token_standard\", type any}, {\"nft.name\", type any}, {\"nft.description\", type any}, {\"nft.image_url\", type any}, {\"nft.display_image_url\", type any}, {\"nft.display_animation_url\", type any}, {\"nft.metadata_url\", type any}, {\"nft.opensea_url\", type any}, {\"nft.updated_at\", type any}, {\"nft.is_disabled\", type any}, {\"nft.is_nsfw\", type any}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
