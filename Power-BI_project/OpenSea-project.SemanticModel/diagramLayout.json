@@ -10,7 +10,7 @@
       "nodes": [
         {
           "location": {
-            "x": 238,
+            "x": 664,
             "y": 0
           },
           "nodeIndex": "boredape_baseclue_overview_datasourcePBI",
@@ -23,8 +23,8 @@
         },
         {
           "location": {
-            "x": 238,
-            "y": 353
+            "x": 182,
+            "y": 0
           },
           "nodeIndex": "dimCollection",
           "nodeLineageTag": "5830c1d3-ddaa-4b16-80b2-537938760203",
@@ -36,13 +36,26 @@
         },
         {
           "location": {
-            "x": 284,
-            "y": 176.5
+            "x": 435,
+            "y": 362.5
           },
           "nodeIndex": "all_assets_order_boredape-baseclub",
           "nodeLineageTag": "3005b484-fa3c-4dd1-b645-cbed1a3d1960",
           "size": {
             "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 766,
+            "y": 279.25
+          },
+          "nodeIndex": "_Medidas",
+          "nodeLineageTag": "b5fb7ca6-5095-4c5b-a20e-6a80d1487b02",
+          "size": {
+            "height": 104,
             "width": 234
           },
           "zIndex": 0

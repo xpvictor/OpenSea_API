@@ -24,8 +24,8 @@
         "disabled": false,
         "items": [
           {
-            "name": "Open_sea_ovierview21881500957064381.svg",
-            "path": "Open_sea_ovierview21881500957064381.svg",
+            "name": "Open_sea_ovierview_(1)881562880934329.svg",
+            "path": "Open_sea_ovierview_(1)881562880934329.svg",
             "type": 100
           }
         ],
@@ -36,7 +36,7 @@
   ],
   "sections": [
     {
-      "config": "{\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Open sea ovierview.svg'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Open_sea_ovierview21881500957064381.svg\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}",
+      "config": "{\"relationships\":[{\"source\":\"c230d2d75db55677512a\",\"target\":\"48a2f6c8e4853a707759\",\"type\":1},{\"source\":\"48a2f6c8e4853a707759\",\"target\":\"c230d2d75db55677512a\",\"type\":3}],\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Open sea ovierview (1).svg'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Open_sea_ovierview_(1)881562880934329.svg\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}",
       "displayName": "Page 1",
       "displayOption": 2,
       "filters": "[]",
@@ -44,22 +44,175 @@
       "name": "4cdade170ea3661d31c1",
       "visualContainers": [
         {
-          "config": "{\"name\":\"10df31b9a807ddb16625\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20,\"y\":222.94117647058823,\"z\":0,\"width\":178.23529411764707,\"height\":178.82352941176472,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"simpleImageEBC4593F96F1425FB3D84C5BF02B5075\",\"projections\":{\"imageURL\":[{\"queryRef\":\"boredape_baseclue_overview_datasourcePBI.image_url\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"boredape_baseclue_overview_datasourcePBI\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"image_url\"},\"Name\":\"boredape_baseclue_overview_datasourcePBI.image_url\",\"NativeReferenceName\":\"image_url\"}]},\"drillFilterOtherVisuals\":true}}",
+          "config": "{\"name\":\"10df31b9a807ddb16625\",\"layouts\":[{\"id\":0,\"position\":{\"x\":11.264,\"y\":497.664,\"z\":2000,\"width\":178.176,\"height\":179.2,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"simpleImageEBC4593F96F1425FB3D84C5BF02B5075\",\"projections\":{\"imageURL\":[{\"queryRef\":\"boredape_baseclue_overview_datasourcePBI.image_url\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"boredape_baseclue_overview_datasourcePBI\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"image_url\"},\"Name\":\"boredape_baseclue_overview_datasourcePBI.image_url\",\"NativeReferenceName\":\"image_url\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
           "filters": "[]",
-          "height": 178.82,
-          "width": 178.24,
-          "x": 20.00,
-          "y": 222.94,
-          "z": 0.00
+          "height": 179.20,
+          "width": 178.18,
+          "x": 11.26,
+          "y": 497.66,
+          "z": 2000.00
         },
         {
-          "config": "{\"name\":\"c230d2d75db55677512a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":218.45018142685865,\"y\":115.12914967091199,\"z\":1000,\"width\":278.96678574105596,\"height\":82.65682540475733,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"boredape_baseclue_overview_datasourcePBI.name\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"boredape_baseclue_overview_datasourcePBI\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"name\"},\"Name\":\"boredape_baseclue_overview_datasourcePBI.name\",\"NativeReferenceName\":\"name\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"boredape_baseclue_overview_datasourcePBI\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"name\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'BABC #1001'\"}}]]}}}]}}}}]}}}",
+          "config": "{\"name\":\"115239e70408c9c20100\",\"layouts\":[{\"id\":0,\"position\":{\"x\":11.685393258426966,\"y\":483,\"z\":1000,\"width\":177.97752808988764,\"height\":226.51685393258427,\"tabOrder\":16000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}},\"rectangleRoundedCurve\":{\"expr\":{\"Literal\":{\"Value\":\"14L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#262829'\"}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"1.5D\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
           "filters": "[]",
-          "height": 82.66,
-          "width": 278.97,
-          "x": 218.45,
-          "y": 115.13,
+          "height": 226.52,
+          "width": 177.98,
+          "x": 11.69,
+          "y": 483.00,
           "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"2e01dec947d61c38d7dc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":15.335999999809006,\"y\":378.35469158878504,\"z\":8000,\"width\":203.3644859813084,\"height\":60.610591900311526,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"_Medidas._$ ETH total volume USD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"_$ ETH total volume USD\"},\"Name\":\"_Medidas._$ ETH total volume USD\",\"NativeReferenceName\":\"USD volume\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"_$ ETH total volume USD\"}}}]},\"columnProperties\":{\"_Medidas._$ ETH total volume USD\":{\"displayName\":\"USD volume\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"cardTitle\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"dataLabels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#262829'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 60.61,
+          "width": 203.36,
+          "x": 15.34,
+          "y": 378.35,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"2f56d7b072075d80454a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":656.1548457889919,\"y\":318.1955317725753,\"z\":11000,\"width\":203.34448160535118,\"height\":130.5685618729097,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}},\"rectangleRoundedCurve\":{\"expr\":{\"Literal\":{\"Value\":\"14L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#262829'\"}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 130.57,
+          "width": 203.34,
+          "x": 656.15,
+          "y": 318.20,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"32fc222757174155b018\",\"layouts\":[{\"id\":0,\"position\":{\"x\":11.264,\"y\":676.864,\"z\":4000,\"width\":179.2,\"height\":29.696,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Medidas._select collection\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"_select collection\"},\"Name\":\"_Medidas._select collection\",\"NativeReferenceName\":\"_select collection\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#262829'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 29.70,
+          "width": 179.20,
+          "x": 11.26,
+          "y": 676.86,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"39fff6ddd69e81cdd623\",\"layouts\":[{\"id\":0,\"position\":{\"x\":656.5322616820519,\"y\":378.35469158878504,\"z\":16000,\"width\":203.3644859813084,\"height\":61.40809968847352,\"tabOrder\":15000}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"_Medidas._% NFT owners\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"_% NFT owners\"},\"Name\":\"_Medidas._% NFT owners\",\"NativeReferenceName\":\"NFT owners\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"_% NFT owners\"}}}]},\"columnProperties\":{\"_Medidas._$ ETH total volume USD\":{\"displayName\":\"USD volume\"},\"_Medidas._% NFT owners\":{\"displayName\":\"NFT owners\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"cardTitle\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"dataLabels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#262829'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 61.41,
+          "width": 203.36,
+          "x": 656.53,
+          "y": 378.35,
+          "z": 16000.00
+        },
+        {
+          "config": "{\"name\":\"3e023e596d826cbd41a2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":228.06120030404188,\"y\":318.1955317725753,\"z\":9000,\"width\":203.34448160535118,\"height\":130.5685618729097,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}},\"rectangleRoundedCurve\":{\"expr\":{\"Literal\":{\"Value\":\"14L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#262829'\"}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 130.57,
+          "width": 203.34,
+          "x": 228.06,
+          "y": 318.20,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"48a2f6c8e4853a707759\",\"layouts\":[{\"id\":0,\"position\":{\"x\":244.736,\"y\":13.312,\"z\":5000,\"width\":279.552,\"height\":57.344,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"boredape_baseclue_overview_datasourcePBI.name\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"boredape_baseclue_overview_datasourcePBI\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"name\"},\"Name\":\"boredape_baseclue_overview_datasourcePBI.name\",\"NativeReferenceName\":\"name\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"boredape_baseclue_overview_datasourcePBI\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"name\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'BABC #1003'\"}}]]}}}]}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'NFT name'\"}}}}}],\"items\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 57.34,
+          "width": 279.55,
+          "x": 244.74,
+          "y": 13.31,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"5dbd910677d4355bd18b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":15.084611675279705,\"y\":318.1955317725753,\"z\":6000,\"width\":203.34448160535118,\"height\":130.5685618729097,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}},\"rectangleRoundedCurve\":{\"expr\":{\"Literal\":{\"Value\":\"14L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#262829'\"}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 130.57,
+          "width": 203.34,
+          "x": 15.08,
+          "y": 318.20,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"8e190fe4116dd666a4ac\",\"layouts\":[{\"id\":0,\"position\":{\"x\":15.335999999809006,\"y\":270.336,\"z\":17000,\"width\":844.5607476635514,\"height\":43.06542056074766,\"tabOrder\":17000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}},\"rectangleRoundedCurve\":{\"expr\":{\"Literal\":{\"Value\":\"20L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#262829'\"}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 43.07,
+          "width": 844.56,
+          "x": 15.34,
+          "y": 270.34,
+          "z": 17000.00
+        },
+        {
+          "config": "{\"name\":\"91becb05e50b2116c002\",\"layouts\":[{\"id\":0,\"position\":{\"x\":14.92828534406327,\"y\":280.7854382022472,\"z\":18000,\"width\":844.0449438202247,\"height\":30.56179775280899,\"tabOrder\":18000}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(dimCollection.description.0)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dimCollection\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"description.0\"}},\"Function\":3},\"Name\":\"Min(dimCollection.description.0)\",\"NativeReferenceName\":\"First description.0\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"cardTitle\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"card\":[{\"properties\":{\"barShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"outlineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 30.56,
+          "width": 844.04,
+          "x": 14.93,
+          "y": 280.79,
+          "z": 18000.00
+        },
+        {
+          "config": "{\"name\":\"a6a11760eb4b46c58a34\",\"layouts\":[{\"id\":0,\"position\":{\"x\":656.5322616820519,\"y\":329.70671651090345,\"z\":15000,\"width\":203.3644859813084,\"height\":47.850467289719624,\"tabOrder\":14000}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"_Medidas._Owners\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"_Owners - FORMAT\"},\"Name\":\"_Medidas._Owners\",\"NativeReferenceName\":\"Owners\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"_Owners - FORMAT\"}}}]},\"columnProperties\":{\"_Medidas._Owners\":{\"displayName\":\"Owners\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"cardTitle\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"dataLabels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#262829'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 47.85,
+          "width": 203.36,
+          "x": 656.53,
+          "y": 329.71,
+          "z": 15000.00
+        },
+        {
+          "config": "{\"name\":\"bb07ab55ad7dbd320126\",\"layouts\":[{\"id\":0,\"position\":{\"x\":443.1782571602294,\"y\":318.1955317725753,\"z\":10000,\"width\":203.34448160535118,\"height\":130.5685618729097,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}},\"rectangleRoundedCurve\":{\"expr\":{\"Literal\":{\"Value\":\"14L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#262829'\"}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 130.57,
+          "width": 203.34,
+          "x": 443.18,
+          "y": 318.20,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"bd9069340beedbb0b54c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":228.06120030404188,\"y\":377.336,\"z\":13000,\"width\":204.41471571906357,\"height\":61.00334448160535,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"_Medidas._$ ETH floor price USD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"_$ ETH floor price USD\"},\"Name\":\"_Medidas._$ ETH floor price USD\",\"NativeReferenceName\":\"USD floor price\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"_$ ETH floor price USD\"}}}]},\"columnProperties\":{\"_Medidas._$ ETH total volume USD\":{\"displayName\":\"USD volume\"},\"_Medidas._$ ETH floor price USD\":{\"displayName\":\"USD floor price\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"cardTitle\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"dataLabels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#262829'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 61.00,
+          "width": 204.41,
+          "x": 228.06,
+          "y": 377.34,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"c230d2d75db55677512a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":11.264,\"y\":13.312,\"z\":3000,\"width\":220.16,\"height\":57.344,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dimCollection.collection\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dimCollection\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"collection\"},\"Name\":\"dimCollection.collection\",\"NativeReferenceName\":\"collection\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dimCollection\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"collection\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'boredape-baseclub'\"}}]]}}}]}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"items\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Collection'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[{\"name\":\"38f7ff2a905e5a1666c1\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dimCollection\"}},\"Property\":\"collection\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dimCollection\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"collection\"}},\"Right\":{\"Literal\":{\"Value\":\"null\"}}}}}}}]},\"type\":\"Advanced\",\"howCreated\":0,\"isHiddenInViewMode\":false,\"isLockedInViewMode\":true}]",
+          "height": 57.34,
+          "width": 220.16,
+          "x": 11.26,
+          "y": 13.31,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"cbc68649d33c707e7ee1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":15.335999999809006,\"y\":329.70671651090345,\"z\":7000,\"width\":203.3644859813084,\"height\":47.05295950155763,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"_Medidas._ETH total volume FORMAT\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"_ETH total volume FORMAT\"},\"Name\":\"_Medidas._ETH total volume FORMAT\",\"NativeReferenceName\":\"_ETH total volume FORMAT\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"cardTitle\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#262829'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 47.05,
+          "width": 203.36,
+          "x": 15.34,
+          "y": 329.71,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"d55f77d01c408807259b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":446.7877133954475,\"y\":329.70671651090345,\"z\":14000,\"width\":200.97196261682242,\"height\":78.15576323987538,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"_Medidas._NFT avaliable\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"_NFT avaliable\"},\"Name\":\"_Medidas._NFT avaliable\",\"NativeReferenceName\":\"NFT avaliable\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"_NFT avaliable\"}}}]},\"columnProperties\":{\"_Medidas._NFT avaliable\":{\"displayName\":\"NFT avaliable\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"cardTitle\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"dataLabels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#262829'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 78.16,
+          "width": 200.97,
+          "x": 446.79,
+          "y": 329.71,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"e4aaf4f6d430d54ae072\",\"layouts\":[{\"id\":0,\"position\":{\"x\":228.06120030404188,\"y\":329.9681070234114,\"z\":12000,\"width\":204.41471571906357,\"height\":47.090301003344486,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"_Medidas._ETH floor price\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"_ETH floor price\"},\"Name\":\"_Medidas._ETH floor price\",\"NativeReferenceName\":\"_ETH floor price\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"cardTitle\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#262829'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 47.09,
+          "width": 204.41,
+          "x": 228.06,
+          "y": 329.97,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"ea00e0cb07582279baa4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":11.685393258426966,\"y\":88.08988764044943,\"z\":0,\"width\":1260,\"height\":382.02247191011236,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"simpleImageEBC4593F96F1425FB3D84C5BF02B5075\",\"projections\":{\"imageURL\":[{\"queryRef\":\"dimCollection.banner_image_url.0\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dimCollection\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"banner_image_url.0\"},\"Name\":\"dimCollection.banner_image_url.0\",\"NativeReferenceName\":\"banner_image_url.0\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"imageSettings\":[{\"properties\":{\"scalingMode\":{\"expr\":{\"Literal\":{\"Value\":\"'fit'\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 382.02,
+          "width": 1260.00,
+          "x": 11.69,
+          "y": 88.09,
+          "z": 0.00
         }
       ],
       "width": 1280.00
