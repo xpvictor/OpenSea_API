@@ -6,6 +6,10 @@ from dotenv import load_dotenv
 import os
 import re
 
+'''
+Python file responsible for collect overview information about collection and transform to CSV file for Power BI project
+'''
+
 load_dotenv()
 
 slug_collection = 'boredape-baseclub'
