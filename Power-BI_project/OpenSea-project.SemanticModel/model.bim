@@ -4,7 +4,7 @@
     "annotations": [
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"dimNFT\",\"dimCollection\",\"all_assets_order_boredape-baseclub\",\"_Medidas\",\"dimCalendar\"]"
+        "value": "[\"dimNFT\",\"dimCollection\",\"all_assets_order_boredape-baseclub\",\"_Medidas\",\"dimCalendar\",\"boredapeyachtclub_overview_status\",\"boredapeyachtclub_overview_datasourcePBI\",\"boredapeyachtclub_order\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -3428,7 +3428,6 @@
                     "ConceptualProperty": "identifier"
                   }
                 },
-                "NameType": "Identifier",
                 "State": "Generated",
                 "Terms": [
                   {
@@ -5988,6 +5987,29 @@
                   }
                 ]
               },
+              "dim_collection.payment_tokens_0": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dimCollection",
+                    "ConceptualProperty": "payment_tokens.0"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "payment_tokens.0": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "payment_token.0": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.78
+                    }
+                  }
+                ]
+              },
               "dim_collection.project_url_0": {
                 "Definition": {
                   "Binding": {
@@ -6812,6 +6834,92 @@
                   }
                 ]
               },
+              "v_Medidas_medida.v_List_of_celebrities_list_of_celebrities": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Medidas",
+                    "ConceptualProperty": "_List of celebrities"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "_list of celebrities": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "_ chronology of celebrity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.771
+                    }
+                  },
+                  {
+                    "_ directory of celebrity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.748
+                    }
+                  },
+                  {
+                    "_ catalog of celebrity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.748
+                    }
+                  },
+                  {
+                    "_ catalogue of celebrity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.748
+                    }
+                  },
+                  {
+                    "_ inventory of celebrity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.748
+                    }
+                  },
+                  {
+                    "_ record of celebrity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.748
+                    }
+                  },
+                  {
+                    "Owners highlight": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
               "v_Medidas_medida.v_NFT_Name_NFT_name": {
                 "Definition": {
                   "Binding": {
@@ -7017,6 +7125,16 @@
                       "State": "Suggested",
                       "Weight": 0.9
                     }
+                  },
+                  {
+                    "Last ETH sale": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
                   }
                 ]
               },
@@ -7132,6 +7250,16 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.605
+                    }
+                  },
+                  {
+                    "Last USD sale": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
                     }
                   }
                 ]
@@ -7252,6 +7380,16 @@
                   },
                   {
                     "NFT orders": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Orders": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -9638,19 +9776,6 @@
                     "ID": "dim_NFTs_have_identifiers",
                     "State": "Generated",
                     "Weight": 0.99
-                  },
-                  {
-                    "ID": "identifiers_are_names_IDs_of_dim_NFTs",
-                    "Name": {
-                      "Name": {
-                        "Role": "boredape_baseclue_overview_datasource_PBI.identifier"
-                      },
-                      "Subject": {
-                        "Role": "boredape_baseclue_overview_datasource_PBI"
-                      }
-                    },
-                    "State": "Generated",
-                    "Weight": 0.99
                   }
                 ],
                 "Roles": {
@@ -11600,6 +11725,39 @@
                 },
                 "State": "Generated"
               },
+              "dim_collection_has_payment_tokens_0": {
+                "Binding": {
+                  "ConceptualEntity": "dimCollection"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dim_collection.payment_tokens_0"
+                      },
+                      "Subject": {
+                        "Role": "dim_collection"
+                      }
+                    },
+                    "ID": "dim_collections_have_payment_tokens_0",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dim_collection": {
+                    "Target": {
+                      "Entity": "dim_collection"
+                    }
+                  },
+                  "dim_collection.payment_tokens_0": {
+                    "Target": {
+                      "Entity": "dim_collection.payment_tokens_0"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "dim_collection_has_project_url_0": {
                 "Binding": {
                   "ConceptualEntity": "dimCollection"
@@ -12570,6 +12728,39 @@
                 },
                 "State": "Generated"
               },
+              "v_Medidas_medida_has_v_List_of_celebrities_list_of_celebrities": {
+                "Binding": {
+                  "ConceptualEntity": "_Medidas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Medidas_medida.v_List_of_celebrities_list_of_celebrities"
+                      },
+                      "Subject": {
+                        "Role": "v_Medidas_medida"
+                      }
+                    },
+                    "ID": "Phrasing_medidas_have__list_of_celebrities",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_Medidas_medida": {
+                    "Target": {
+                      "Entity": "v_Medidas_medida"
+                    }
+                  },
+                  "v_Medidas_medida.v_List_of_celebrities_list_of_celebrities": {
+                    "Target": {
+                      "Entity": "v_Medidas_medida.v_List_of_celebrities_list_of_celebrities"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "v_Medidas_medida_has_v_NFT_Name_NFT_name": {
                 "Binding": {
                   "ConceptualEntity": "_Medidas"
@@ -12714,6 +12905,125 @@
       "returnErrorValuesAsNull": true
     },
     "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "expressions": [
+      {
+        "name": "boredapeyachtclub_overview_status",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "expression": [
+          "let",
+          "    Source = Json.Document(File.Contents(\"C:\\Users\\victo\\OneDrive\\Documentos\\GitHub\\OpenSea_API\\datasource\\boredapeyachtclub_overview_status.json\")),",
+          "    #\"Converted to Table\" = Table.FromRecords({Source}),",
+          "    #\"Expanded volume\" = Table.ExpandRecordColumn(#\"Converted to Table\", \"volume\", {\"0\"}, {\"volume.0\"}),",
+          "    #\"Expanded sales\" = Table.ExpandRecordColumn(#\"Expanded volume\", \"sales\", {\"0\"}, {\"sales.0\"}),",
+          "    #\"Expanded average_price\" = Table.ExpandRecordColumn(#\"Expanded sales\", \"average_price\", {\"0\"}, {\"average_price.0\"}),",
+          "    #\"Expanded num_owners\" = Table.ExpandRecordColumn(#\"Expanded average_price\", \"num_owners\", {\"0\"}, {\"num_owners.0\"}),",
+          "    #\"Expanded market_cap\" = Table.ExpandRecordColumn(#\"Expanded num_owners\", \"market_cap\", {\"0\"}, {\"market_cap.0\"}),",
+          "    #\"Expanded floor_price\" = Table.ExpandRecordColumn(#\"Expanded market_cap\", \"floor_price\", {\"0\"}, {\"floor_price.0\"}),",
+          "    #\"Expanded floor_price_symbol\" = Table.ExpandRecordColumn(#\"Expanded floor_price\", \"floor_price_symbol\", {\"0\"}, {\"floor_price_symbol.0\"}),",
+          "    #\"Expanded volume - USD\" = Table.ExpandRecordColumn(#\"Expanded floor_price_symbol\", \"volume - USD\", {\"0\"}, {\"volume - USD.0\"}),",
+          "    #\"Expanded floor_price - USD\" = Table.ExpandRecordColumn(#\"Expanded volume - USD\", \"floor_price - USD\", {\"0\"}, {\"floor_price - USD.0\"}),",
+          "    #\"Expanded collection\" = Table.ExpandRecordColumn(#\"Expanded floor_price - USD\", \"collection\", {\"0\"}, {\"collection.0\"}),",
+          "    #\"Expanded name\" = Table.ExpandRecordColumn(#\"Expanded collection\", \"name\", {\"0\"}, {\"name.0\"}),",
+          "    #\"Expanded description\" = Table.ExpandRecordColumn(#\"Expanded name\", \"description\", {\"0\"}, {\"description.0\"}),",
+          "    #\"Expanded image_url\" = Table.ExpandRecordColumn(#\"Expanded description\", \"image_url\", {\"0\"}, {\"image_url.0\"}),",
+          "    #\"Expanded banner_image_url\" = Table.ExpandRecordColumn(#\"Expanded image_url\", \"banner_image_url\", {\"0\"}, {\"banner_image_url.0\"}),",
+          "    #\"Expanded owner\" = Table.ExpandRecordColumn(#\"Expanded banner_image_url\", \"owner\", {\"0\"}, {\"owner.0\"}),",
+          "    #\"Expanded safelist_status\" = Table.ExpandRecordColumn(#\"Expanded owner\", \"safelist_status\", {\"0\"}, {\"safelist_status.0\"}),",
+          "    #\"Expanded category\" = Table.ExpandRecordColumn(#\"Expanded safelist_status\", \"category\", {\"0\"}, {\"category.0\"}),",
+          "    #\"Expanded is_disabled\" = Table.ExpandRecordColumn(#\"Expanded category\", \"is_disabled\", {\"0\"}, {\"is_disabled.0\"}),",
+          "    #\"Expanded is_nsfw\" = Table.ExpandRecordColumn(#\"Expanded is_disabled\", \"is_nsfw\", {\"0\"}, {\"is_nsfw.0\"}),",
+          "    #\"Expanded trait_offers_enabled\" = Table.ExpandRecordColumn(#\"Expanded is_nsfw\", \"trait_offers_enabled\", {\"0\"}, {\"trait_offers_enabled.0\"}),",
+          "    #\"Expanded collection_offers_enabled\" = Table.ExpandRecordColumn(#\"Expanded trait_offers_enabled\", \"collection_offers_enabled\", {\"0\"}, {\"collection_offers_enabled.0\"}),",
+          "    #\"Expanded opensea_url\" = Table.ExpandRecordColumn(#\"Expanded collection_offers_enabled\", \"opensea_url\", {\"0\"}, {\"opensea_url.0\"}),",
+          "    #\"Expanded project_url\" = Table.ExpandRecordColumn(#\"Expanded opensea_url\", \"project_url\", {\"0\"}, {\"project_url.0\"}),",
+          "    #\"Expanded wiki_url\" = Table.ExpandRecordColumn(#\"Expanded project_url\", \"wiki_url\", {\"0\"}, {\"wiki_url.0\"}),",
+          "    #\"Expanded discord_url\" = Table.ExpandRecordColumn(#\"Expanded wiki_url\", \"discord_url\", {\"0\"}, {\"discord_url.0\"}),",
+          "    #\"Expanded telegram_url\" = Table.ExpandRecordColumn(#\"Expanded discord_url\", \"telegram_url\", {\"0\"}, {\"telegram_url.0\"}),",
+          "    #\"Expanded twitter_username\" = Table.ExpandRecordColumn(#\"Expanded telegram_url\", \"twitter_username\", {\"0\"}, {\"twitter_username.0\"}),",
+          "    #\"Expanded instagram_username\" = Table.ExpandRecordColumn(#\"Expanded twitter_username\", \"instagram_username\", {\"0\"}, {\"instagram_username.0\"}),",
+          "    #\"Expanded contracts\" = Table.ExpandRecordColumn(#\"Expanded instagram_username\", \"contracts\", {\"0\"}, {\"contracts.0\"}),",
+          "    #\"Expanded editors\" = Table.ExpandRecordColumn(#\"Expanded contracts\", \"editors\", {\"0\"}, {\"editors.0\"}),",
+          "    #\"Expanded fees\" = Table.ExpandRecordColumn(#\"Expanded editors\", \"fees\", {\"0\"}, {\"fees.0\"}),",
+          "    #\"Expanded payment_tokens\" = Table.ExpandRecordColumn(#\"Expanded fees\", \"payment_tokens\", {\"0\"}, {\"payment_tokens.0\"}),",
+          "    #\"Expanded total_supply\" = Table.ExpandRecordColumn(#\"Expanded payment_tokens\", \"total_supply\", {\"0\"}, {\"total_supply.0\"}),",
+          "    #\"Expanded created_date\" = Table.ExpandRecordColumn(#\"Expanded total_supply\", \"created_date\", {\"0\"}, {\"created_date.0\"}),",
+          "    #\"Expanded rarity.strategy_id\" = Table.ExpandRecordColumn(#\"Expanded created_date\", \"rarity.strategy_id\", {\"0\"}, {\"rarity.strategy_id.0\"}),",
+          "    #\"Expanded rarity.strategy_version\" = Table.ExpandRecordColumn(#\"Expanded rarity.strategy_id\", \"rarity.strategy_version\", {\"0\"}, {\"rarity.strategy_version.0\"}),",
+          "    #\"Expanded rarity.calculated_at\" = Table.ExpandRecordColumn(#\"Expanded rarity.strategy_version\", \"rarity.calculated_at\", {\"0\"}, {\"rarity.calculated_at.0\"}),",
+          "    #\"Expanded rarity.max_rank\" = Table.ExpandRecordColumn(#\"Expanded rarity.calculated_at\", \"rarity.max_rank\", {\"0\"}, {\"rarity.max_rank.0\"}),",
+          "    #\"Expanded rarity.tokens_scored\" = Table.ExpandRecordColumn(#\"Expanded rarity.max_rank\", \"rarity.tokens_scored\", {\"0\"}, {\"rarity.tokens_scored.0\"}),",
+          "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Expanded rarity.tokens_scored\",{{\"volume.0\", type number}, {\"sales.0\", Int64.Type}, {\"average_price.0\", type number}, {\"num_owners.0\", Int64.Type}, {\"market_cap.0\", type number}, {\"floor_price.0\", type number}, {\"floor_price_symbol.0\", type text}, {\"volume - USD.0\", type number}, {\"floor_price - USD.0\", type number}, {\"collection.0\", type text}, {\"name.0\", type text}, {\"description.0\", type text}, {\"image_url.0\", type text}, {\"banner_image_url.0\", type text}, {\"owner.0\", type text}, {\"safelist_status.0\", type text}, {\"category.0\", type text}, {\"is_disabled.0\", type logical}, {\"is_nsfw.0\", type logical}, {\"trait_offers_enabled.0\", type logical}, {\"collection_offers_enabled.0\", type logical}, {\"opensea_url.0\", type text}, {\"project_url.0\", type text}, {\"wiki_url.0\", type text}, {\"discord_url.0\", type text}, {\"telegram_url.0\", type text}, {\"twitter_username.0\", type text}, {\"instagram_username.0\", type text}, {\"contracts.0\", type any}, {\"editors.0\", type any}, {\"fees.0\", type any}, {\"payment_tokens.0\", type any}, {\"total_supply.0\", Int64.Type}, {\"created_date.0\", type date}, {\"rarity.strategy_id.0\", type text}, {\"rarity.strategy_version.0\", type text}, {\"rarity.calculated_at.0\", type datetime}, {\"rarity.max_rank.0\", Int64.Type}, {\"rarity.tokens_scored.0\", Int64.Type}}),",
+          "    #\"Reordered Columns\" = Table.ReorderColumns(#\"Changed Type\",{\"collection.0\", \"volume.0\", \"sales.0\", \"average_price.0\", \"num_owners.0\", \"market_cap.0\", \"floor_price.0\", \"floor_price_symbol.0\", \"volume - USD.0\", \"floor_price - USD.0\", \"name.0\", \"description.0\", \"image_url.0\", \"banner_image_url.0\", \"owner.0\", \"safelist_status.0\", \"category.0\", \"is_disabled.0\", \"is_nsfw.0\", \"trait_offers_enabled.0\", \"collection_offers_enabled.0\", \"opensea_url.0\", \"project_url.0\", \"wiki_url.0\", \"discord_url.0\", \"telegram_url.0\", \"twitter_username.0\", \"instagram_username.0\", \"contracts.0\", \"editors.0\", \"fees.0\", \"total_supply.0\", \"created_date.0\", \"rarity.strategy_id.0\", \"rarity.strategy_version.0\", \"rarity.calculated_at.0\", \"rarity.max_rank.0\", \"rarity.tokens_scored.0\"}),",
+          "    #\"Renamed Columns\" = Table.RenameColumns(#\"Reordered Columns\",{{\"collection.0\", \"collection\"}})",
+          "in",
+          "    #\"Renamed Columns\""
+        ],
+        "kind": "m",
+        "lineageTag": "8e842f82-6d94-412f-ae22-0820b17e3200"
+      },
+      {
+        "name": "boredapeyachtclub_overview_datasourcePBI",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "expression": [
+          "let",
+          "    Source = Csv.Document(File.Contents(\"C:\\Users\\victo\\OneDrive\\Documentos\\GitHub\\OpenSea_API\\datasource\\boredape_baseclue_overview_datasourcePBI.csv\"),[Delimiter=\",\", Columns=14, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+          "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+          "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"identifier\", Int64.Type}, {\"collection\", type text}, {\"contract\", type text}, {\"token_standard\", type text}, {\"name\", type text}, {\"description\", type text}, {\"image_url\", type text}, {\"display_image_url\", type text}, {\"display_animation_url\", type text}, {\"metadata_url\", type text}, {\"opensea_url\", type text}, {\"updated_at\", type datetime}, {\"is_disabled\", type logical}, {\"is_nsfw\", type logical}}),",
+          "    #\"Removed Duplicates\" = Table.Distinct(#\"Changed Type\", {\"name\"}),",
+          "    #\"Removed Top Rows\" = Table.Skip(#\"Removed Duplicates\",2),",
+          "    #\"Replaced Value\" = Table.ReplaceValue(#\"Removed Top Rows\",\"boredape-baseclub\",\"boredapeyachtclub\",Replacer.ReplaceText,{\"collection\"}),",
+          "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Replaced Value\",\"BABC\",\"BAYC\",Replacer.ReplaceText,{\"name\"}),",
+          "    #\"Removed Duplicates1\" = Table.Distinct(#\"Replaced Value1\", {\"name\"}),",
+          "    #\"Replaced Value2\" = Table.ReplaceValue(#\"Removed Duplicates1\",\"Bored Ape Base Club\",\"Bored Ape Yacht Club\",Replacer.ReplaceText,{\"name\"})",
+          "in",
+          "    #\"Replaced Value2\""
+        ],
+        "kind": "m",
+        "lineageTag": "1966fe82-7149-46fb-8138-a6505ee54220"
+      },
+      {
+        "name": "boredapeyachtclub_order",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "expression": [
+          "let",
+          "    Source = Csv.Document(File.Contents(\"C:\\Users\\victo\\OneDrive\\Documentos\\GitHub\\OpenSea_API\\datasource\\orders\\boredapeyachtclub_order.csv\"),[Delimiter=\",\", Columns=18, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+          "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+          "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"event_type\", type text}, {\"order_type\", type text}, {\"chain\", type text}, {\"start_date\", type date}, {\"expiration_date\", type date}, {\"quantity\", Int64.Type}, {\"event_timestamp\", type date}, {\"asset_identifier\", Int64.Type}, {\"asset_collection\", type text}, {\"asset_token_standard\", type text}, {\"asset_name\", type text}, {\"asset_description\", type text}, {\"asset_updated_at\", type datetime}, {\"asset_is_disabled\", type logical}, {\"asset_is_nsfw\", type logical}, {\"payment_symbol\", type text}, {\"criteria-collection_slug\", type text}, {\"payment_value\", Int64.Type}}),",
+          "    #\"Removed Top Rows\" = Table.Skip(#\"Changed Type\",50)",
+          "in",
+          "    #\"Removed Top Rows\""
+        ],
+        "kind": "m",
+        "lineageTag": "f14261b9-8a53-4a27-a13e-7f348ad80bc5"
+      }
+    ],
     "relationships": [
       {
         "name": "05f62d10-9886-465e-854f-f9f0a8dac422",
@@ -13018,9 +13328,10 @@
                 "    Source = Csv.Document(File.Contents(\"C:\\Users\\victo\\OneDrive\\Documentos\\GitHub\\OpenSea_API\\datasource\\boredape_baseclue_overview_datasourcePBI.csv\"),[Delimiter=\",\", Columns=14, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
                 "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"identifier\", Int64.Type}, {\"collection\", type text}, {\"contract\", type text}, {\"token_standard\", type text}, {\"name\", type text}, {\"description\", type text}, {\"image_url\", type text}, {\"display_image_url\", type text}, {\"display_animation_url\", type text}, {\"metadata_url\", type text}, {\"opensea_url\", type text}, {\"updated_at\", type datetime}, {\"is_disabled\", type logical}, {\"is_nsfw\", type logical}}),",
-                "    #\"Removed Duplicates\" = Table.Distinct(#\"Changed Type\", {\"name\"})",
+                "    #\"Removed Duplicates\" = Table.Distinct(#\"Changed Type\", {\"name\"}),",
+                "    #\"Appended Query\" = Table.Combine({#\"Removed Duplicates\", boredapeyachtclub_overview_datasourcePBI})",
                 "in",
-                "    #\"Removed Duplicates\""
+                "    #\"Appended Query\""
               ],
               "type": "m"
             }
@@ -13967,11 +14278,10 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "int64",
-            "formatString": "0",
+            "dataType": "string",
             "lineageTag": "99bda761-2401-4a29-bc8c-859f46997edc",
             "sourceColumn": "rarity.strategy_version.0",
-            "summarizeBy": "sum"
+            "summarizeBy": "none"
           },
           {
             "name": "rarity.calculated_at.0",
@@ -14025,6 +14335,19 @@
             "lineageTag": "d390f66b-d90f-421a-afd9-084e9bffe49f",
             "sourceColumn": "rarity.tokens_scored.0",
             "summarizeBy": "sum"
+          },
+          {
+            "name": "payment_tokens.0",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "731b6af2-67b4-41f2-9387-a5087cfab4b2",
+            "sourceColumn": "payment_tokens.0",
+            "summarizeBy": "none"
           }
         ],
         "lineageTag": "5830c1d3-ddaa-4b16-80b2-537938760203",
@@ -14078,9 +14401,10 @@
                 "    #\"Expanded rarity.tokens_scored\" = Table.ExpandRecordColumn(#\"Expanded rarity.max_rank\", \"rarity.tokens_scored\", {\"0\"}, {\"rarity.tokens_scored.0\"}),",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Expanded rarity.tokens_scored\",{{\"volume.0\", type number}, {\"sales.0\", Int64.Type}, {\"average_price.0\", type number}, {\"num_owners.0\", Int64.Type}, {\"market_cap.0\", type number}, {\"floor_price.0\", type number}, {\"floor_price_symbol.0\", type text}, {\"volume - USD.0\", type number}, {\"floor_price - USD.0\", type number}, {\"collection.0\", type text}, {\"name.0\", type text}, {\"description.0\", type text}, {\"image_url.0\", type text}, {\"banner_image_url.0\", type text}, {\"owner.0\", type text}, {\"safelist_status.0\", type text}, {\"category.0\", type text}, {\"is_disabled.0\", type logical}, {\"is_nsfw.0\", type logical}, {\"trait_offers_enabled.0\", type logical}, {\"collection_offers_enabled.0\", type logical}, {\"opensea_url.0\", type text}, {\"project_url.0\", type text}, {\"wiki_url.0\", type text}, {\"discord_url.0\", type text}, {\"telegram_url.0\", type text}, {\"twitter_username.0\", type text}, {\"instagram_username.0\", type text}, {\"contracts.0\", type any}, {\"editors.0\", type any}, {\"fees.0\", type any}, {\"required_zone.0\", type text}, {\"total_supply.0\", Int64.Type}, {\"created_date.0\", type date}, {\"rarity.strategy_id.0\", type text}, {\"rarity.strategy_version.0\", Int64.Type}, {\"rarity.calculated_at.0\", type datetime}, {\"rarity.max_rank.0\", Int64.Type}, {\"rarity.tokens_scored.0\", Int64.Type}}),",
                 "    #\"Reordered Columns\" = Table.ReorderColumns(#\"Changed Type\",{\"collection.0\", \"volume.0\", \"sales.0\", \"average_price.0\", \"num_owners.0\", \"market_cap.0\", \"floor_price.0\", \"floor_price_symbol.0\", \"volume - USD.0\", \"floor_price - USD.0\", \"name.0\", \"description.0\", \"image_url.0\", \"banner_image_url.0\", \"owner.0\", \"safelist_status.0\", \"category.0\", \"is_disabled.0\", \"is_nsfw.0\", \"trait_offers_enabled.0\", \"collection_offers_enabled.0\", \"opensea_url.0\", \"project_url.0\", \"wiki_url.0\", \"discord_url.0\", \"telegram_url.0\", \"twitter_username.0\", \"instagram_username.0\", \"contracts.0\", \"editors.0\", \"fees.0\", \"required_zone.0\", \"total_supply.0\", \"created_date.0\", \"rarity.strategy_id.0\", \"rarity.strategy_version.0\", \"rarity.calculated_at.0\", \"rarity.max_rank.0\", \"rarity.tokens_scored.0\"}),",
-                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Reordered Columns\",{{\"collection.0\", \"collection\"}})",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Reordered Columns\",{{\"collection.0\", \"collection\"}}),",
+                "    #\"Appended Query\" = Table.Combine({#\"Renamed Columns\", boredapeyachtclub_overview_status})",
                 "in",
-                "    #\"Renamed Columns\""
+                "    #\"Appended Query\""
               ],
               "type": "m"
             }
@@ -14403,9 +14727,10 @@
                 "    Source = Csv.Document(File.Contents(\"C:\\Users\\victo\\OneDrive\\Documentos\\GitHub\\OpenSea_API\\datasource\\orders\\boredape-baseclub_order.csv\"),[Delimiter=\",\", Columns=18, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
                 "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
                 "    #\"Replaced Value\" = Table.ReplaceValue(#\"Promoted Headers\",\".\",\",\",Replacer.ReplaceText,{\"payment_value\"}),",
-                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Replaced Value\",{{\"event_type\", type text}, {\"order_type\", type text}, {\"chain\", type text}, {\"start_date\", type date}, {\"expiration_date\", type date}, {\"quantity\", Int64.Type}, {\"event_timestamp\", type date}, {\"asset_identifier\", Int64.Type}, {\"asset_collection\", type text}, {\"asset_token_standard\", type text}, {\"asset_name\", type text}, {\"asset_description\", type text}, {\"asset_updated_at\", type datetime}, {\"asset_is_disabled\", type logical}, {\"asset_is_nsfw\", type logical}, {\"payment_symbol\", type text}, {\"criteria-collection_slug\", type text}, {\"payment_value\", type number}})",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Replaced Value\",{{\"event_type\", type text}, {\"order_type\", type text}, {\"chain\", type text}, {\"start_date\", type date}, {\"expiration_date\", type date}, {\"quantity\", Int64.Type}, {\"event_timestamp\", type date}, {\"asset_identifier\", Int64.Type}, {\"asset_collection\", type text}, {\"asset_token_standard\", type text}, {\"asset_name\", type text}, {\"asset_description\", type text}, {\"asset_updated_at\", type datetime}, {\"asset_is_disabled\", type logical}, {\"asset_is_nsfw\", type logical}, {\"payment_symbol\", type text}, {\"criteria-collection_slug\", type text}, {\"payment_value\", type number}}),",
+                "    #\"Appended Query\" = Table.Combine({#\"Changed Type\", boredapeyachtclub_order})",
                 "in",
-                "    #\"Changed Type\""
+                "    #\"Appended Query\""
               ],
               "type": "m"
             }
@@ -15003,7 +15328,7 @@
               "    2637.7 * MAX('all_assets_order_boredape-baseclub'[payment_value]))",
               "return vLastValue"
             ],
-            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "formatString": "\\$#,0.00;(\\$#,0.00);\\$#,0.00",
             "lineageTag": "3ebef440-e69d-439b-9753-ec9aa905a775"
           },
           {
@@ -15059,6 +15384,38 @@
               ""
             ],
             "lineageTag": "0109d872-372b-4775-a337-5407e1cf1c02"
+          },
+          {
+            "name": "_List of celebrities",
+            "displayFolder": "NFT orders measure",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    TRUE(),",
+              "    SELECTEDVALUE(dimNFT[name]) = \"BAYC #6633\" || SELECTEDVALUE(dimNFT[name]) = \"BAYC #5269\", \"Neymar Jr.\",",
+              "    SELECTEDVALUE(dimNFT[name]) = \"BAYC #3001\", \"Justin Bieber\",",
+              "    SELECTEDVALUE(dimNFT[name]) = \"BAYC #599\", \"Jimmy Fallon\",",
+              "    SELECTEDVALUE(dimNFT[name]) = \"BAYC #1294\", \"Paris Hilton\",",
+              "    SELECTEDVALUE(dimNFT[name]) = \"BAYC #961\" || SELECTEDVALUE(dimNFT[name]) = \"BAYC #9039\", \"Post Malone\",",
+              "    SELECTEDVALUE(dimNFT[name]) = \"BAYC #6723\", \"Snoop Dogg\",",
+              "    SELECTEDVALUE(dimNFT[name]) = \"BAYC #7990\", \"Stephen Curry\",",
+              "    SELECTEDVALUE(dimNFT[name]) = \"BAYC #9055\", \"Eminem\",",
+              "    SELECTEDVALUE(dimNFT[name]) = \"BAYC #4988\", \"Madonna\",",
+              "    SELECTEDVALUE(dimNFT[name]) = \"BAYC #5164\", \"Ben Simmons\",",
+              "    SELECTEDVALUE(dimNFT[name]) = \"BAYC #9258\", \"Kevin Hart\",",
+              "    SELECTEDVALUE(dimNFT[name]) = \"BAYC #6141\", \"Gwyneth Paltrow\",",
+              "    SELECTEDVALUE(dimNFT[name]) = \"BAYC #4808\", \"Marshmello\",",
+              "    SELECTEDVALUE(dimNFT[name]) = \"BAYC #1442\", \"Logan Paul\",",
+              "    SELECTEDVALUE(dimNFT[name]) = \"BAYC #9719\", \"Rich the Kid\",",
+              "    SELECTEDVALUE(dimNFT[name]) = \"BAYC #4672\", \"Future\",",
+              "    SELECTEDVALUE(dimNFT[name]) = \"BAYC #7380\", \"DJ Khaled\",",
+              "    SELECTEDVALUE(dimNFT[name]) = \"BAYC #6877\", \"Meek Mill\",",
+              "    SELECTEDVALUE(dimNFT[name]) = \"BAYC #598\" || SELECTEDVALUE(dimNFT[name]) = \"BAYC #7226\", \"LaMelo Ball\",",
+              "    BLANK()",
+              ")",
+              ""
+            ],
+            "lineageTag": "a9b43338-b285-442a-ba16-c2972a28a94b"
           }
         ],
         "partitions": [
