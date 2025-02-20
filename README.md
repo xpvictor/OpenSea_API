@@ -18,6 +18,8 @@ manipulation and visualization.
 * To create the project, you need an API key and add its values to a file named ".env" with the following values:
 > api_key = < api key> 
 
+<h2>Used files:</h2>
+All CSV and JSON file was created by python script and used into Power BI project
 
 <h2>Power BI pages avaliable</h2>
 

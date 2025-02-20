@@ -13015,10 +13015,9 @@
           "let",
           "    Source = Csv.Document(File.Contents(\"C:\\Users\\victo\\OneDrive\\Documentos\\GitHub\\OpenSea_API\\datasource\\orders\\boredapeyachtclub_order.csv\"),[Delimiter=\",\", Columns=18, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
           "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
-          "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"event_type\", type text}, {\"order_type\", type text}, {\"chain\", type text}, {\"start_date\", type date}, {\"expiration_date\", type date}, {\"quantity\", Int64.Type}, {\"event_timestamp\", type date}, {\"asset_identifier\", Int64.Type}, {\"asset_collection\", type text}, {\"asset_token_standard\", type text}, {\"asset_name\", type text}, {\"asset_description\", type text}, {\"asset_updated_at\", type datetime}, {\"asset_is_disabled\", type logical}, {\"asset_is_nsfw\", type logical}, {\"payment_symbol\", type text}, {\"criteria-collection_slug\", type text}, {\"payment_value\", Int64.Type}}),",
-          "    #\"Removed Top Rows\" = Table.Skip(#\"Changed Type\",50)",
+          "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"event_type\", type text}, {\"order_type\", type text}, {\"chain\", type text}, {\"start_date\", type date}, {\"expiration_date\", type date}, {\"quantity\", Int64.Type}, {\"event_timestamp\", type date}, {\"asset_identifier\", Int64.Type}, {\"asset_collection\", type text}, {\"asset_token_standard\", type text}, {\"asset_name\", type text}, {\"asset_description\", type text}, {\"asset_updated_at\", type datetime}, {\"asset_is_disabled\", type logical}, {\"asset_is_nsfw\", type logical}, {\"payment_symbol\", type text}, {\"criteria-collection_slug\", type text}, {\"payment_value\", Int64.Type}})",
           "in",
-          "    #\"Removed Top Rows\""
+          "    #\"Changed Type\""
         ],
         "kind": "m",
         "lineageTag": "f14261b9-8a53-4a27-a13e-7f348ad80bc5"
