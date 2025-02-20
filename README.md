@@ -22,3 +22,5 @@ manipulation and visualization.
 <h2>Power BI pages avaliable</h2>
 
 ![page1](/Image_background/image18.jpg)
+![page2](/Image_background/image19.jpg)
+![page3](/Image_background/image20.jpg)
